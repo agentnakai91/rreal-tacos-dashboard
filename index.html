@@ -1,0 +1,407 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rreal Tacos Dashboard</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,sans-serif;background:#0f1117;color:#e0e0e0}
+.hd{background:linear-gradient(135deg,#d4380d,#ff6b35);padding:20px 30px;display:flex;justify-content:space-between;align-items:center}.hd h1{font-size:22px;color:#fff}.hd .dt{color:rgba(255,255,255,.8);font-size:13px}
+.tabs{display:flex;background:#1a1d27;padding:0 15px;border-bottom:1px solid #2a2d3a;overflow-x:auto}.tab{padding:12px 16px;cursor:pointer;color:#888;font-size:13px;border-bottom:3px solid transparent;white-space:nowrap}.tab.a{color:#ff6b35;border-bottom-color:#ff6b35}
+.cn{padding:16px;display:none}.cn.a{display:block}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px}.c{background:#1a1d27;border-radius:10px;padding:16px;border:1px solid #2a2d3a}
+.c .l{font-size:11px;color:#888;text-transform:uppercase;margin-bottom:6px}.c .v{font-size:24px;font-weight:700;color:#fff}.c .ch{font-size:12px;margin-top:3px}.up{color:#52c41a}.dn{color:#ff4d4f}.or{color:#fa8c16}
+.st{font-size:16px;font-weight:600;color:#fff;margin:20px 0 10px;padding-bottom:6px;border-bottom:1px solid #2a2d3a}table{width:100%;border-collapse:collapse;background:#1a1d27;border-radius:10px;overflow:hidden;margin-bottom:12px}
+th{background:#252836;padding:10px 14px;text-align:left;font-size:11px;color:#888;text-transform:uppercase}td{padding:10px 14px;border-top:1px solid #2a2d3a;font-size:13px}tr:hover{background:#1e2130}
+.hr{background:#1a2a1a!important}.fr{background:#2a1a1a!important}.b{display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600}.bg{background:#162312;color:#52c41a}.br{background:#2a1215;color:#ff4d4f}.bo{background:#2a1f12;color:#fa8c16}
+.al{border-left:4px solid;padding:12px;border-radius:8px;margin-bottom:6px;background:#1a1d27}.ft{text-align:center;padding:16px;color:#555;font-size:11px;border-top:1px solid #2a2d3a;margin-top:16px}</style></head><body>
+<div class="hd"><div><h1>🌮 Rreal Tacos COO Dashboard</h1><div class="dt">Sunday, March 29, 2026 • 12 Locations</div></div><div style="text-align:right;color:#fff">🦞 OpenClaw</div></div>
+<div class="tabs"><div class="tab a" onclick="st(this,'ov')">📊 Overview</div><div class="tab" onclick="st(this,'ts')">🍞 Sales</div><div class="tab" onclick="st(this,'mk')">📱 Marketing</div><div class="tab" onclick="st(this,'sn')">☀️ Sunday</div><div class="tab" onclick="st(this,'ova')">⭐ Ovation</div><div class="tab" onclick="st(this,'lb')">👥 7shifts</div><div class="tab" onclick="st(this,'so')">🏢 StoneOS</div><div class="tab" onclick="st(this,'ms')">🕵️ Mystery Shopper</div></div>
+<div id="ov" class="cn a"><div class="g"><div class="c"><div class="l">Net Sales (Sun Mar 29)</div><div class="v">$192,210</div><div class="ch up">11 of 12 locations</div></div><div class="c"><div class="l">Sunday Revenue (7d)</div><div class="v">$37,421</div><div class="ch up">+12%</div></div><div class="c"><div class="l">Customer Score</div><div class="v">4.4/5.0</div><div class="ch up">+0.2</div></div><div class="c"><div class="l">Followers</div><div class="v">252.4K</div><div class="ch up">+441</div></div>
+<div class="c"><div class="l">Email Sales (Mar)</div><div class="v">$246,283</div><div class="ch up">Top channel</div></div><div class="c"><div class="l">5-Star Reviews (7d)</div><div class="v">116</div><div class="ch up">+31</div></div><div class="c"><div class="l">Customers Saved</div><div class="v">302</div><div class="ch up">+56%</div></div><div class="c"><div class="l">Ad Spend (Mar)</div><div class="v">$7,914</div></div></div>
+<div class="st">⚠️ Alerts</div><div class="al" style="border-color:#ff4d4f"><b class="dn">Woodstock Labor 48%</b> — Review staffing</div><div class="al" style="border-color:#fa8c16"><b class="or">Booking $914/appt</b> — Rework Meta ads</div><div class="al" style="border-color:#52c41a"><b class="up">Beltline $31,262</b> — Top location 🔥</div></div>
+<div id="ts" class="cn"><div class="st">📊 Sales by Location — Sun Mar 29, 2026</div>
+<div class="g">
+<div class="c"><div class="l">Total Net Sales</div><div class="v">$192,210</div><div class="ch up">11 of 12 locations</div></div>
+<div class="c"><div class="l">Avg Per Location</div><div class="v">$17,474</div><div class="ch">Excluding Woodstock</div></div>
+<div class="c"><div class="l">Top Location</div><div class="v">Beltline</div><div class="ch up">$31,262</div></div>
+<div class="c"><div class="l">Best Labor</div><div class="v">Sandy Springs</div><div class="ch up">13.3%</div></div>
+</div>
+<table><thead><tr><th>Location</th><th>Net Sales</th><th>Labor %</th><th>Discounts</th><th>Status</th></tr></thead><tbody>
+<tr class="hr"><td><b>🥇 10 - Beltline</b></td><td style="color:#52c41a;font-weight:700">$31,262</td><td>14.5%</td><td>$428</td><td><span class="b bg">Top Sales</span></td></tr>
+<tr class="hr"><td><b>🥈 09 - Lawrenceville</b></td><td style="color:#52c41a;font-weight:700">$27,612</td><td>14.8%</td><td>$1,498</td><td><span class="b bg">Strong</span></td></tr>
+<tr><td><b>🥉 04 - Sandy Springs</b></td><td>$19,181</td><td class="up">13.3%</td><td>$1,684</td><td><span class="b bg">Best Labor</span></td></tr>
+<tr><td><b>11 - Duluth</b></td><td>$18,898</td><td>15.5%</td><td>$876</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>07 - Buckhead</b></td><td>$18,240</td><td>13.7%</td><td>$1,244</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>08 - Decatur</b></td><td>$18,151</td><td>14.9%</td><td>$1,505</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>02 - West Midtown</b></td><td>$14,760</td><td class="or">18.2%</td><td>$1,239</td><td><span class="b bo">Watch Labor</span></td></tr>
+<tr><td><b>06 - Sugar Hill</b></td><td>$14,751</td><td>15.1%</td><td>$659</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>03 - Chamblee</b></td><td>$14,067</td><td class="or">17.7%</td><td>$943</td><td><span class="b bo">Watch Labor</span></td></tr>
+<tr><td><b>05 - Cumming</b></td><td>$11,431</td><td class="or">17.3%</td><td>$526</td><td><span class="b bo">Watch Labor</span></td></tr>
+<tr class="fr"><td><b>12 - Woodstock</b></td><td>$3,856</td><td class="dn" style="font-weight:700">48.1%</td><td>$1,444</td><td><span class="b br">🚩 Critical</span></td></tr>
+<tr><td><b>01 - Midtown</b></td><td>—</td><td>—</td><td>—</td><td>No Data</td></tr>
+</tbody><tfoot><tr style="background:#252836;font-weight:700"><td>TOTAL</td><td style="color:#ff6b35">$192,210</td><td>—</td><td>$12,046</td><td></td></tr></tfoot></table>
+
+<div class="st">🏆 Location Rankings</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Highest Revenue</div><div class="v">Beltline</div><div class="ch">$31,262 — 16.3% of total</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Best Labor Efficiency</div><div class="v">Sandy Springs</div><div class="ch up">13.3% labor on $19.2K sales</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Most Improved</div><div class="v">Duluth</div><div class="ch up">$18.9K — strong performance</div></div>
+<div class="c" style="border-left:4px solid #ff4d4f"><div class="l">Needs Attention</div><div class="v">Woodstock</div><div class="ch dn">48.1% labor — $3.9K sales</div></div>
+</div>
+
+<div class="st">⚠️ Sales Insights</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Woodstock labor at 48.1%</b> — Target is under 20%. At $3,856 in sales, labor cost is eating almost half of revenue. Consider reducing staff during slow hours or adjusting schedules.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">Sandy Springs discounts highest at $1,684</b> — While labor is excellent at 13.3%, high discounts may indicate over-promotion. Review discount policies.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">3 locations above 17% labor</b> — West Midtown (18.2%), Chamblee (17.7%), Cumming (17.3%). Review scheduling efficiency.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Beltline + Lawrenceville = $58,874</b> — These two locations account for 30.6% of total sales. Replicate their playbook across other stores.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Midtown data missing</b> — Toast didn't load for this location. Typically averages ~$20K which would push total above $212K.</div>
+
+<div class="st">📈 Revenue Distribution</div>
+<table><thead><tr><th>Tier</th><th>Locations</th><th>Combined Sales</th><th>% of Total</th></tr></thead><tbody>
+<tr class="hr"><td><b>Top Tier ($18K+)</b></td><td>Beltline, Lawrenceville, Sandy Springs, Duluth, Buckhead, Decatur</td><td style="color:#52c41a;font-weight:700">$152,344</td><td>79.3%</td></tr>
+<tr><td><b>Mid Tier ($11-18K)</b></td><td>West Midtown, Sugar Hill, Chamblee, Cumming</td><td>$55,009</td><td>28.6%</td></tr>
+<tr class="fr"><td><b>Needs Growth</b></td><td>Woodstock</td><td class="dn">$3,856</td><td>2.0%</td></tr>
+</tbody></table>
+</div>
+<div id="mk" class="cn">
+<div class="st">📱 Social Media Overview — March 1-25, 2026</div>
+<div class="g">
+<div class="c"><div class="l">Total Followers</div><div class="v">252.4K</div><div class="ch">Instagram + Facebook</div></div>
+<div class="c"><div class="l">IG Followers Gained</div><div class="v">441</div><div class="ch dn">Lost 154 (Net +287)</div></div>
+<div class="c"><div class="l">FB Page Follows</div><div class="v">10,317</div></div>
+<div class="c"><div class="l">Total Engagement</div><div class="v">12,045</div></div>
+<div class="c"><div class="l">Likes</div><div class="v">8,545</div></div>
+<div class="c"><div class="l">Comments</div><div class="v">520</div></div>
+<div class="c"><div class="l">Shares</div><div class="v">2,551</div></div>
+<div class="c"><div class="l">Saves</div><div class="v">238</div></div>
+<div class="c"><div class="l">Reels Posted</div><div class="v">10</div><div class="ch or">~2.5/week avg</div></div>
+<div class="c"><div class="l">FB Page Views</div><div class="v">5,092</div></div>
+<div class="c"><div class="l">IG Post Engagement</div><div class="v">5,449</div></div>
+<div class="c"><div class="l">Feb Followers Gained</div><div class="v">2,814</div><div class="ch dn">March down 84% vs Feb</div></div>
+</div>
+
+<div class="st">⚠️ Social Media Insights</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Follower growth crashed</b> — March: +287 net vs February: +2,814. Thats a 90% drop. Posting frequency dropped and content mix shifted. Need more viral-format reels.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">Only 10 posts in 25 days</b> — Avg 2.5 posts/week is below restaurant industry standard of 4-5/week. Doubling output could significantly boost reach.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">154 followers lost</b> — 35% churn rate on new followers. Review what content may be causing unfollows.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Woodstock content dominating</b> — Top 3 posts are all Woodstock grand opening series. Community content resonates strongest.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Shares at 2,551</b> — Strong share rate indicates content is worth spreading. Keep creating shareable moments.</div>
+
+<div class="st">📝 Top Content — Ranked by Impressions</div>
+<table><thead><tr><th>#</th><th>Date</th><th>Post</th><th>Impressions</th><th>Likes</th><th>Shares</th><th>Clicks</th></tr></thead><tbody>
+<tr class="hr"><td>1</td><td>Mar 23</td><td>Woodstock sneak peek inside 👀🔥</td><td style="font-weight:700">2,282</td><td>22</td><td>0</td><td style="color:#52c41a">100</td></tr>
+<tr class="hr"><td>2</td><td>Mar 24</td><td>Woodstock $1,000 giveaway 💸</td><td style="font-weight:700">1,127</td><td>27</td><td>1</td><td>63</td></tr>
+<tr><td>3</td><td>Mar 6</td><td>Sandy Springs 100 health score 💯</td><td>822</td><td>9</td><td>0</td><td>19</td></tr>
+<tr><td>4</td><td>Mar 25</td><td>Woodstock local business tacos 🌮</td><td>736</td><td>23</td><td>2</td><td>66</td></tr>
+<tr><td>5</td><td>Mar 13</td><td>ATL United tailgate promo ⚽️</td><td>736</td><td>9</td><td>1</td><td>10</td></tr>
+<tr><td>6</td><td>Mar 8</td><td>Womens Day flowers 🌸</td><td>593</td><td>7</td><td>0</td><td>9</td></tr>
+<tr><td>7</td><td>Mar 1</td><td>The Switch Up — ordering 🌮🔃</td><td>544</td><td>3</td><td>0</td><td>2</td></tr>
+<tr><td>8</td><td>Mar 20</td><td>ATL United tailgate announce</td><td>489</td><td>5</td><td>0</td><td>12</td></tr>
+<tr><td>9</td><td>Mar 2</td><td>Switch Up continues 🔃</td><td>468</td><td>6</td><td>0</td><td>2</td></tr>
+<tr class="fr"><td>10</td><td>Mar 21</td><td>Mocktail taste test 🍹</td><td class="dn">240</td><td>4</td><td>0</td><td>1</td></tr>
+</tbody></table>
+
+<div class="st">💰 Paid Advertising — Meta Ads</div>
+<div class="g">
+<div class="c"><div class="l">Total Spend</div><div class="v">$7,914</div></div>
+<div class="c"><div class="l">Total Reach</div><div class="v">427.8K</div></div>
+<div class="c"><div class="l">Avg CPC</div><div class="v">$0.37</div></div>
+<div class="c"><div class="l">Total Clicks</div><div class="v">21,152</div></div>
+<div class="c"><div class="l">Conversions</div><div class="v">1</div><div class="ch dn">$914/conversion</div></div>
+<div class="c"><div class="l">Cost per 1K Reach</div><div class="v">$18.50</div></div>
+</div>
+
+<div class="st">📊 Campaign Breakdown</div>
+<table><thead><tr><th>Campaign</th><th>CTR</th><th>CPC</th><th>Clicks</th><th>Reach</th><th>Spend</th></tr></thead><tbody>
+<tr><td><b>Traffic | IG | All Locations</b></td><td>2.29%</td><td>$0.37</td><td>16,676</td><td>349,941</td><td>$6,135</td></tr>
+<tr><td><b>Traffic | IG | Box Valentines</b></td><td>2.15%</td><td>$0.33</td><td>2,610</td><td>87,883</td><td>$865</td></tr>
+<tr class="fr"><td><b>Leads | Booking | OT</b></td><td>1.72%</td><td>$0.49</td><td>1,866</td><td>45,983</td><td class="dn">$914</td></tr>
+</tbody></table>
+
+<div class="st">🔝 Top Ads by Performance</div>
+<table><thead><tr><th>Ad</th><th>CTR</th><th>CPC</th><th>Clicks</th><th>Spend</th></tr></thead><tbody>
+<tr><td>AD 03</td><td>2.08%</td><td>$0.33</td><td>5,921</td><td>$1,944</td></tr>
+<tr><td>AD 02 Kevin</td><td style="color:#52c41a">2.89%</td><td>$0.41</td><td>4,758</td><td>$1,942</td></tr>
+<tr><td>Atlanta pulling up tomorrow</td><td>2.08%</td><td>$0.39</td><td>3,029</td><td>$1,192</td></tr>
+<tr><td>AD 02 mar - Copia</td><td>2.21%</td><td>$0.37</td><td>2,167</td><td>$797</td></tr>
+</tbody></table>
+
+<div class="st">🔍 Google Ads</div>
+<div class="g">
+<div class="c"><div class="l">Impressions</div><div class="v">121.9K</div></div>
+<div class="c"><div class="l">Clicks</div><div class="v">6,167</div></div>
+<div class="c"><div class="l">Avg CPC</div><div class="v up">$0.19</div></div>
+<div class="c"><div class="l">Search CTR</div><div class="v up">19.67%</div><div class="ch up">Exceptional</div></div>
+</div>
+<table><thead><tr><th>Campaign</th><th>CTR</th></tr></thead><tbody>
+<tr><td><b>RE | Search | All</b></td><td style="color:#52c41a;font-weight:700">19.67%</td></tr>
+<tr><td><b>AO-Pmax</b></td><td>4.90%</td></tr>
+</tbody></table>
+
+<div class="st">📧 Email Marketing</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Emails Delivered</div><div class="v">213.99K</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Emails Opened</div><div class="v">483.43K</div><div class="ch up">226% open rate</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Sales Driven</div><div class="v up" style="font-size:28px">$246,283</div><div class="ch up">$1.15 per email sent</div></div>
+</div>
+
+<div class="st">📱 SMS Marketing</div>
+<div class="g">
+<div class="c"><div class="l">SMS Delivered</div><div class="v">9,019</div></div>
+<div class="c"><div class="l">Sales Driven</div><div class="v">$5,673</div><div class="ch">$0.63 per SMS</div></div>
+</div>
+
+<div class="st">⚠️ Paid Ads Insights</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Booking campaign burning cash</b> — $914 per appointment is unsustainable. Pause this campaign immediately and rework targeting/creative.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Google Search at 19.67% CTR</b> — This is 4x industry average. Ensure budget is fully allocated here.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Email is 31x more effective than ads</b> — Email drove $246K on ~$0 ad cost vs $7.9K ad spend driving traffic. Invest heavily in email list growth.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">AD 02 Kevin has best CTR at 2.89%</b> — Scale this creative format. Personal/name-based ads outperform generic ones.</div>
+
+<div class="st">👥 Audience Demographics</div>
+<table><thead><tr><th>Age Group</th><th>Followers</th><th>%</th></tr></thead><tbody>
+<tr class="hr"><td><b>25-34</b></td><td>84,419</td><td style="color:#52c41a;font-weight:700">33.4%</td></tr>
+<tr><td><b>35-44</b></td><td>73,220</td><td>29.0%</td></tr>
+<tr><td><b>45-54</b></td><td>48,664</td><td>19.3%</td></tr>
+<tr><td><b>18-24</b></td><td>22,168</td><td>8.8%</td></tr>
+<tr><td><b>55-64</b></td><td>16,178</td><td>6.4%</td></tr>
+<tr><td><b>65+</b></td><td>5,038</td><td>2.0%</td></tr>
+<tr><td><b>13-17</b></td><td>2,723</td><td>1.1%</td></tr>
+</tbody></table>
+
+<div class="st">📍 Top Cities by Followers</div>
+<table><thead><tr><th>City</th><th>Followers</th><th>Has Location?</th></tr></thead><tbody>
+<tr><td>Atlanta, GA</td><td style="font-weight:700">23,029</td><td class="up">Midtown, Buckhead, Beltline</td></tr>
+<tr><td>Lawrenceville, GA</td><td>5,746</td><td class="up">Yes</td></tr>
+<tr><td>Redan, GA</td><td>4,901</td><td class="dn">No — expansion opportunity?</td></tr>
+<tr><td>Lilburn, GA</td><td>3,821</td><td class="dn">No — expansion opportunity?</td></tr>
+<tr><td>Snellville, GA</td><td>3,700</td><td class="dn">No — expansion opportunity?</td></tr>
+<tr><td>Marietta, GA</td><td>3,692</td><td class="dn">No — expansion opportunity?</td></tr>
+<tr><td>Sandy Springs, GA</td><td>3,591</td><td class="up">Yes</td></tr>
+<tr><td>Union City, GA</td><td>3,495</td><td class="dn">No — expansion opportunity?</td></tr>
+<tr><td>Duluth, GA</td><td>2,299</td><td class="up">Yes</td></tr>
+<tr><td>Woodstock, GA</td><td>1,989</td><td class="up">Opening soon!</td></tr>
+</tbody></table>
+</div>
+<div id="sn" class="cn">
+<div class="st">☀️ Sunday — Payment & Review Platform</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Sunday Revenue (7 Days)</div><div class="v">$37,421</div><div class="ch up">↑ 12% vs last week</div></div>
+<div class="c"><div class="l">Daily Average</div><div class="v">$1,854</div><div class="ch">Per day from Sunday payments</div></div>
+<div class="c"><div class="l">Sunday Usage Rate</div><div class="v">34.00%</div><div class="ch">34% of all payments via Sunday</div></div>
+<div class="c"><div class="l">Tips incl. Service Charge</div><div class="v">$6,235</div><div class="ch up">↑ 14% vs last week</div></div>
+<div class="c"><div class="l">Tipping Rate (QR Code)</div><div class="v">18.30%</div></div>
+<div class="c"><div class="l">Top Tipper</div><div class="v">Jesus Viloria</div><div class="ch">$804 in tips</div></div>
+</div>
+
+<div class="st">⭐ Google Reviews via Sunday</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">5-Star Google Reviews (7d)</div><div class="v">116</div><div class="ch up">+30 vs last week</div></div>
+<div class="c"><div class="l">5-Star from Sunday</div><div class="v">65</div><div class="ch">56% of all 5-star reviews</div></div>
+<div class="c"><div class="l">Avg Google Rating</div><div class="v">4.84</div><div class="ch up">Near perfect</div></div>
+</div>
+
+<div class="st">📍 Connected Venues (12)</div>
+<table><thead><tr><th>Venue</th><th>Status</th></tr></thead><tbody>
+<tr><td>Rreal Tacos - Midtown</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Beltline</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Chamblee</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Duluth</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Sandy Springs</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Buckhead</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Lawrenceville</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Cumming</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Decatur</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - Sugar Hill</td><td class="up">Active</td></tr>
+<tr><td>Rreal Tacos - West Midtown</td><td class="up">Active</td></tr>
+<tr><td>Zocalo</td><td class="up">Active</td></tr>
+</tbody></table>
+
+<div class="st">💡 Sunday Insights</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Sunday drives 56% of your 5-star reviews</b> — 65 of 116 five-star reviews came through Sunday. The QR code checkout flow is your review engine.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Revenue up 12% week-over-week</b> — Sunday payments growing consistently. At $37K/week thats ~$160K/month in Sunday-processed revenue.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">66% of payments NOT on Sunday</b> — Usage is 34%. Increasing to 50% could boost tips by ~$3K/week and generate ~50 more reviews/week.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">4.84 Google rating is elite</b> — Top 5% of restaurants nationally. Protect this by continuing to encourage reviews through Sunday.</div>
+
+<div class="st">🎯 Recommendations</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Push Sunday adoption to 50%</b> — Train servers to mention QR code payment. Even a brief mention doubles usage rates.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Tipping rate optimization</b> — 18.3% is good but testing different tip amount presets could push this to 20%+.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Recognize Jesus Viloria</b> — Top tipper at $804. Consider a loyalty perk or personal thank-you.</div>
+</div>
+<div id="ova" class="cn">
+<div class="st">⭐ Ovation — Customer Experience Overview</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Average Score</div><div class="v">4.4 / 5.0</div><div class="ch up">↑ 0.2 vs prior period</div></div>
+<div class="c"><div class="l">Surveys Taken</div><div class="v">2,196</div><div class="ch up">↑ 7% vs prior period</div></div>
+<div class="c"><div class="l">Response Rate</div><div class="v">100%</div><div class="ch up">Every survey answered</div></div>
+<div class="c"><div class="l">Avg Response Time</div><div class="v">10 min</div><div class="ch up">Down from 34 min! 🔥</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Customers Saved</div><div class="v">302</div><div class="ch up">↑ 56% vs prior period</div></div>
+<div class="c"><div class="l">Winback Opportunities</div><div class="v">625</div><div class="ch">Customers to re-engage</div></div>
+</div>
+
+<div class="st">📊 Satisfaction by Source</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Text</div><div class="v">5.0 ⭐⭐⭐⭐⭐</div><div class="ch up">Perfect score</div></div>
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Dine In</div><div class="v">4.9 ⭐⭐⭐⭐⭐</div><div class="ch up">Near perfect</div></div>
+<div class="c"><div class="l">OpenTable</div><div class="v">4.5 ⭐⭐⭐⭐</div><div class="ch">Room to improve</div></div>
+</div>
+
+<div class="st">🏆 Key Wins</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Response time cut by 71%</b> — From 34 minutes down to 10 minutes. This is exceptional. Fast responses = more saved customers = more revenue retained.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">302 customers saved (+56%)</b> — At an average check of ~$25, thats roughly $7,550 in retained revenue this period alone. Over a year thats $90K+ in saved business.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">100% response rate maintained</b> — Every single customer who gave feedback got a response. This builds loyalty and shows customers you care.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">2,196 surveys = strong sample size</b> — Enough data to make confident decisions about operations, food quality, and service.</div>
+
+<div class="st">⚠️ Areas to Watch</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">OpenTable score at 4.5 vs Dine-In at 4.9</b> — 0.4 gap suggests OpenTable guests may have different expectations or experience friction. Investigate: wait times? reservation accuracy? first impression?</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">625 winback opportunities</b> — These are customers who had a negative experience but havent returned. A targeted winback campaign (discount/free item) could recapture 10-20% = 63-125 customers.</div>
+
+<div class="st">💰 Revenue Impact Analysis</div>
+<table><thead><tr><th>Metric</th><th>Value</th><th>Revenue Impact</th></tr></thead><tbody>
+<tr class="hr"><td><b>Customers Saved</b></td><td>302</td><td class="up" style="font-weight:700">~$7,550/period (~$90K/year)</td></tr>
+<tr><td><b>Winback Potential</b></td><td>625 customers</td><td class="or">~$1,563-$3,125 recoverable</td></tr>
+<tr><td><b>Survey Response Value</b></td><td>2,196 responses</td><td>Priceless operational data</td></tr>
+<tr><td><b>Response Time Savings</b></td><td>24 min faster</td><td class="up">Higher save rate</td></tr>
+</tbody></table>
+
+<div class="st">📈 Score Benchmarks</div>
+<table><thead><tr><th>Rating</th><th>Industry Avg</th><th>Rreal Tacos</th><th>vs Industry</th></tr></thead><tbody>
+<tr><td><b>Overall Score</b></td><td>3.8-4.0</td><td style="color:#52c41a;font-weight:700">4.4</td><td class="up">+10-15% above avg</td></tr>
+<tr><td><b>Response Rate</b></td><td>40-60%</td><td style="color:#52c41a;font-weight:700">100%</td><td class="up">Top 1%</td></tr>
+<tr><td><b>Response Time</b></td><td>2-4 hours</td><td style="color:#52c41a;font-weight:700">10 min</td><td class="up">12-24x faster</td></tr>
+<tr><td><b>Save Rate</b></td><td>5-10%</td><td style="color:#52c41a;font-weight:700">13.8%</td><td class="up">+38% above avg</td></tr>
+</tbody></table>
+
+<div class="st">🎯 Recommendations</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Launch winback campaign</b> — Send personalized offers to the 625 winback customers. Even 10% return = $1,500+ in recovered revenue. Use email or SMS.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Investigate OpenTable gap</b> — Mystery shop your own OpenTable experience. Check reservation accuracy, greeting, wait times. Small improvements here boost online reviews.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Share wins with team</b> — 302 saved customers and 10-min response time are things to celebrate. Recognition drives continued performance.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Set per-location benchmarks</b> — Break down Ovation scores by location to identify which stores excel and which need coaching.</div>
+</div>
+<div id="lb" class="cn">
+<div class="st">👥 7shifts — Workforce Management</div>
+<div class="g">
+<div class="c"><div class="l">Active Location</div><div class="v">Midtown</div><div class="ch">Rreal Tacos HQ</div></div>
+<div class="c"><div class="l">Managers On Today</div><div class="v">3</div><div class="ch">Ramiro, Ariel, Matty</div></div>
+<div class="c"><div class="l">Pending Requests</div><div class="v up">0</div><div class="ch up">All clear</div></div>
+<div class="c"><div class="l">Employees to Invite</div><div class="v or">4</div><div class="ch or">Need onboarding</div></div>
+</div>
+
+<div class="st">📅 Todays Schedule — Midtown (Sun Mar 29)</div>
+<table><thead><tr><th>Employee</th><th>Role</th><th>Shift</th></tr></thead><tbody>
+<tr><td><b>Ramiro Islas</b></td><td>General Manager</td><td>9 AM – 9 PM</td></tr>
+<tr><td><b>Ariel Estrella</b></td><td>General Manager</td><td>9 AM – 1 AM</td></tr>
+<tr><td><b>Matty Garcia M</b></td><td>General Manager</td><td>3 PM – 1 AM</td></tr>
+</tbody></table>
+
+<div class="st">📊 Labor % by Location</div>
+<table><thead><tr><th>Location</th><th>Labor %</th><th>Target</th><th>Status</th></tr></thead><tbody>
+<tr><td><b>Sandy Springs</b></td><td class="up" style="font-weight:700">13.3%</td><td>&lt;18%</td><td><span class="b bg">⭐ Best</span></td></tr>
+<tr><td><b>Buckhead</b></td><td class="up">13.7%</td><td>&lt;18%</td><td><span class="b bg">Excellent</span></td></tr>
+<tr><td><b>Beltline</b></td><td class="up">14.5%</td><td>&lt;18%</td><td><span class="b bg">Great</span></td></tr>
+<tr><td><b>Lawrenceville</b></td><td class="up">14.8%</td><td>&lt;18%</td><td><span class="b bg">Great</span></td></tr>
+<tr><td><b>Decatur</b></td><td>14.9%</td><td>&lt;18%</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>Sugar Hill</b></td><td>15.1%</td><td>&lt;18%</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>Duluth</b></td><td>15.5%</td><td>&lt;18%</td><td><span class="b bg">Good</span></td></tr>
+<tr><td><b>Cumming</b></td><td class="or">17.3%</td><td>&lt;18%</td><td><span class="b bo">Borderline</span></td></tr>
+<tr><td><b>Chamblee</b></td><td class="or">17.7%</td><td>&lt;18%</td><td><span class="b bo">Borderline</span></td></tr>
+<tr><td><b>West Midtown</b></td><td class="or">18.2%</td><td>&lt;18%</td><td><span class="b br">Over Target</span></td></tr>
+<tr class="fr"><td><b>Woodstock</b></td><td class="dn" style="font-weight:700">48.1%</td><td>&lt;18%</td><td><span class="b br">🚩 Critical</span></td></tr>
+</tbody></table>
+
+<div class="st">📋 Recent Activity Log</div>
+<table><thead><tr><th>Date</th><th>Type</th><th>Details</th><th>Manager</th></tr></thead><tbody>
+<tr><td>Mar 29</td><td>🎂 Birthday</td><td>Omar Mendoza Lara</td><td>—</td></tr>
+<tr><td>Mar 28</td><td>Availability</td><td>Jenny L. updated repeating availability</td><td>—</td></tr>
+<tr><td>Mar 24</td><td class="up">Shift Approved</td><td>David: 6pm-11pm (Mar 28)</td><td>Vincent</td></tr>
+<tr><td>Mar 24</td><td class="up">Shift Approved</td><td>David: 12pm-5pm (Mar 28)</td><td>Vincent</td></tr>
+<tr><td>Mar 24</td><td class="up">Shift Approved</td><td>Taylor: 5pm-12am (Mar 27)</td><td>Vincent</td></tr>
+<tr><td>Mar 24</td><td class="up">Shift Approved</td><td>Ava: 12pm-5pm (Mar 24)</td><td>Diego</td></tr>
+<tr><td>Mar 23</td><td class="up">Shift Approved</td><td>Julianne: 5pm-12am (Mar 24)</td><td>Diego</td></tr>
+<tr><td>Mar 23</td><td class="dn">Shift Declined</td><td>Abigail: 5pm-12am (Mar 23)</td><td>—</td></tr>
+<tr><td>Mar 23</td><td>Availability</td><td>Christopher deleted repeating availability</td><td>—</td></tr>
+<tr><td>Mar 22</td><td class="up">Shift Approved</td><td>Kaylee Renee: 3:30pm-12am (Mar 22)</td><td>Vincent</td></tr>
+<tr><td>Mar 21</td><td>Re-published</td><td>Schedule for Mar 23 (Management)</td><td>Fernando</td></tr>
+</tbody></table>
+
+<div class="st">⚠️ Labor Insights</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Woodstock at 48.1% labor</b> — This is 2.7x the target of 18%. With only $3,856 in sales, the location is overstaffed relative to volume. Solutions: reduce shifts during slow hours, cross-train to flex between locations.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">3 locations near target boundary</b> — Cumming (17.3%), Chamblee (17.7%), West Midtown (18.2%). West Midtown is already over. Review if these need schedule adjustments.</div>
+<div class="al" style="border-color:#52c41a"><b class="up">7 of 11 locations under 16% labor</b> — Sandy Springs through Duluth are all performing well. This efficiency is driving profitability.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">4 employees need onboarding invites</b> — These team members cant view schedules or manage availability until invited. Complete onboarding ASAP.</div>
+
+<div class="st">🏆 Manager Activity Rankings</div>
+<table><thead><tr><th>Manager</th><th>Actions This Week</th><th>Type</th></tr></thead><tbody>
+<tr><td><b>Vincent</b></td><td style="color:#52c41a;font-weight:700">4</td><td>Shift approvals</td></tr>
+<tr><td><b>Diego</b></td><td>2</td><td>Shift approvals</td></tr>
+<tr><td><b>Fernando</b></td><td>1</td><td>Schedule publish</td></tr>
+</tbody></table>
+
+<div class="st">🎯 Recommendations</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Woodstock staffing review</b> — Meet with Woodstock GM to align labor with sales projections. Consider reducing to skeleton crew during weekday lunches.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Complete employee onboarding</b> — 4 uninvited employees = scheduling blind spots. Send invites today.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Recognize Vincent</b> — Most active manager this week with 4 shift approvals. Fast approvals keep the team running smoothly.</div>
+</div>
+<div id="so" class="cn"><div class="st">StoneOS — Operations</div><div class="g"><div class="c"><div class="l">Status</div><div class="v up">Connected</div></div><div class="c"><div class="l">User</div><div class="v">Miguel H.</div></div></div><div class="st">Modules</div><div class="g"><div class="c"><div class="l">Finance</div><div class="v">📊</div></div><div class="c"><div class="l">Reports</div><div class="v">📋</div></div><div class="c"><div class="l">Feedback</div><div class="v">💬</div></div><div class="c"><div class="l">HR</div><div class="v">👥</div></div><div class="c"><div class="l">Food Safety</div><div class="v">🍳</div></div><div class="c"><div class="l">Sales</div><div class="v">💰</div></div></div></div>
+<div id="ms" class="cn">
+<div class="st">🕵️ Mystery Shopper — A Closer Look, LLC (March 2026)</div>
+<div class="g">
+<div class="c" style="border-left:4px solid #52c41a"><div class="l">Highest Score</div><div class="v">96.77</div><div class="ch up">Sandy Springs ⭐</div></div>
+<div class="c"><div class="l">Average Score</div><div class="v">89.68</div><div class="ch">8 locations shopped</div></div>
+<div class="c" style="border-left:4px solid #ff4d4f"><div class="l">Lowest Score</div><div class="v">82.19</div><div class="ch dn">Cumming</div></div>
+<div class="c"><div class="l">Locations 90+</div><div class="v up">5 of 8</div><div class="ch up">62.5% excellence rate</div></div>
+</div>
+
+<div class="st">📊 All Scores Ranked</div>
+<table><thead><tr><th>#</th><th>Location</th><th>Score</th><th>Date Shopped</th><th>PDF</th><th>Status</th></tr></thead><tbody>
+<tr class="hr"><td>🥇</td><td><b>Sandy Springs</b></td><td style="color:#52c41a;font-weight:700;font-size:16px">96.77</td><td>Mar 22 (Sun) 5:03 PM</td><td><a href="pdfs/RrealTacosSandySprings[3-22-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bg">Excellent</span></td></tr>
+<tr class="hr"><td>🥈</td><td><b>Sugar Hill</b></td><td style="color:#52c41a;font-weight:700;font-size:16px">93.11</td><td>Mar 24 (Tue) 6:44 PM</td><td><a href="pdfs/RrealTacosSugarHill[3-24-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bg">Great</span></td></tr>
+<tr><td>🥉</td><td><b>Ponce (Beltline)</b></td><td style="font-weight:700;font-size:16px">92.92</td><td>Mar 27</td><td><a href="pdfs/RrealTacosPonce[3-27-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bg">Great</span></td></tr>
+<tr><td>4</td><td><b>West Midtown</b></td><td style="font-weight:700;font-size:16px">92.20</td><td>Mar 26</td><td><a href="pdfs/RrealTacosWestMidtown[3-26-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bg">Great</span></td></tr>
+<tr><td>5</td><td><b>Buckhead</b></td><td style="font-weight:700;font-size:16px">91.69</td><td>Mar 21</td><td><a href="pdfs/RrealTacosBuckhead[3-21-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bg">Good</span></td></tr>
+<tr><td>6</td><td><b>Decatur</b></td><td class="or" style="font-weight:700;font-size:16px">86.77</td><td>Mar 24</td><td><a href="pdfs/RrealTacosDecatur[3-24-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bo">Improve</span></td></tr>
+<tr><td>7</td><td><b>Chamblee</b></td><td class="or" style="font-weight:700;font-size:16px">83.13</td><td>Mar 14</td><td><a href="pdfs/RrealTacosChamblee[3-14-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b bo">Improve</span></td></tr>
+<tr class="fr"><td>8</td><td><b>Cumming</b></td><td class="dn" style="font-weight:700;font-size:16px">82.19</td><td>Mar 22</td><td><a href="pdfs/RrealTacosCumming[3-22-2026].pdf" target="_blank" style="color:#1890ff">📄 View Report</a></td><td><span class="b br">Below Std</span></td></tr>
+</tbody></table>
+
+<div class="st">🔍 Sandy Springs — 96.77 (Detailed Breakdown)</div>
+<table><thead><tr><th>Category</th><th>Score</th><th>Status</th></tr></thead><tbody>
+<tr><td>Arrival and Host Stand</td><td class="or" style="font-weight:700">85.71</td><td><span class="b bo">Only weak area</span></td></tr>
+<tr><td>Server/Bartender Greeting</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Service Flow and Timing</td><td style="font-weight:700">90.00</td><td><span class="b bg">Great</span></td></tr>
+<tr><td>Food and Beverage Quality</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Cleanliness and Environment</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Managers Performance</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Checkout and Farewell</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Overall Experience</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Post-visit Call</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Net Promoter Score</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+</tbody></table>
+
+<div class="st">🔍 Sugar Hill — 93.11 (Detailed Breakdown)</div>
+<table><thead><tr><th>Category</th><th>Score</th><th>Status</th></tr></thead><tbody>
+<tr><td>Arrival and Host Stand</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Server/Bartender Greeting</td><td style="font-weight:700">90.91</td><td><span class="b bg">Great</span></td></tr>
+<tr><td>Service Flow and Timing</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Food and Beverage Quality</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Cleanliness and Environment</td><td style="font-weight:700">97.50</td><td><span class="b bg">Great</span></td></tr>
+<tr class="fr"><td>Managers Performance</td><td class="dn" style="font-weight:700">66.67</td><td><span class="b br">⚠️ Manager didnt visit table</span></td></tr>
+<tr><td>Checkout and Farewell</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr><td>Overall Experience</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+<tr class="fr"><td>Post-visit Call</td><td class="dn" style="font-weight:700">66.67</td><td><span class="b br">⚠️ Needs follow-up</span></td></tr>
+<tr><td>Net Promoter Score</td><td class="up" style="font-weight:700">100.00</td><td><span class="b bg">Perfect</span></td></tr>
+</tbody></table>
+
+<div class="st">📝 Sugar Hill — Manager Notes (Jonathan Michel, DM)</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Positives:</b> Restaurant clean, staff nice, food and drinks on time. Shopper said they would love to have Iveth as their server again!</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Points Lost:</b><br>• Phone answerer was not friendly<br>• Server did not offer recommendations<br>• Server did not check ID<br>• One piece of trash in restroom<br>• Manager did not visit table</div>
+
+<div class="st">📍 Not Yet Shopped in March</div>
+<table><thead><tr><th>Location</th><th>Last Shop</th><th>Action</th></tr></thead><tbody>
+<tr><td><b>Midtown</b></td><td>—</td><td class="or">Schedule ASAP</td></tr>
+<tr><td><b>Duluth</b></td><td>—</td><td class="or">Schedule ASAP</td></tr>
+<tr><td><b>Lawrenceville</b></td><td>—</td><td class="or">Schedule ASAP</td></tr>
+<tr><td><b>Woodstock</b></td><td>N/A (new)</td><td>After grand opening</td></tr>
+</tbody></table>
+
+<div class="st">🎯 Key Takeaways</div>
+<div class="al" style="border-color:#52c41a"><b class="up">Sandy Springs is the gold standard</b> — 8 out of 10 categories at 100%. Only Arrival (85.71) and Service Flow (90) had room for improvement. Replicate this teams approach.</div>
+<div class="al" style="border-color:#ff4d4f"><b class="dn">Manager table visits are critical</b> — Sugar Hill lost 33 points on Manager Performance because the manager didnt visit. This is an easy fix with massive impact.</div>
+<div class="al" style="border-color:#fa8c16"><b class="or">Cumming and Chamblee need focused coaching</b> — Both under 84. Request detailed PDFs and create specific action plans for each location.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">Phone greeting matters</b> — Sugar Hill lost points for unfriendly phone answer. Train all hosts on phone etiquette — its the first impression.</div>
+<div class="al" style="border-color:#1890ff"><b style="color:#1890ff">ID checks and recommendations</b> — Servers should always check IDs for alcohol and proactively recommend dishes. Build into pre-shift checklist.</div>
+</div>
+<div class="ft">Rreal Tacos COO Dashboard • 🦞 OpenClaw • Last updated Sunday, March 29, 2026</div><script>function st(el,id){document.querySelectorAll(".cn").forEach(c=>c.classList.remove("a"));document.querySelectorAll(".tab").forEach(t=>t.classList.remove("a"));document.getElementById(id).classList.add("a");el.classList.add("a")}</script></body></html>

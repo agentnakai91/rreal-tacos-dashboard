@@ -1,0 +1,127 @@
+{
+  "last_updated": "2026-03-29T22:00:00Z",
+  "locations": {
+    "Sandy Springs": {
+      "shops": [
+        {
+          "date": "2026-03-22",
+          "day": "Sunday",
+          "time": "5:03 PM",
+          "score": 96.77,
+          "pdf": "pdfs/RrealTacosSandySprings[3-22-2026].pdf",
+          "categories": {
+            "Arrival & Host Stand": 85.71,
+            "Server/Bartender": 100.00,
+            "Service Flow & Timing": 90.00,
+            "Food & Beverage": 100.00,
+            "Cleanliness": 100.00,
+            "Manager Performance": 100.00,
+            "Checkout & Farewell": 100.00,
+            "Overall Experience": 100.00,
+            "Post-visit Call": 100.00,
+            "Net Promoter Score": 100.00
+          },
+          "notes": "Way to go Sandy Springs - Miguel"
+        }
+      ],
+      "average": 96.77,
+      "trend": "stable"
+    },
+    "Sugar Hill": {
+      "shops": [
+        {
+          "date": "2026-03-24",
+          "day": "Tuesday",
+          "time": "6:44 PM",
+          "score": 93.11,
+          "pdf": null,
+          "categories": {
+            "Arrival & Host Stand": 100.00,
+            "Server/Bartender": 90.91,
+            "Service Flow & Timing": 100.00,
+            "Food & Beverage": 100.00,
+            "Cleanliness": 97.50,
+            "Manager Performance": 66.67,
+            "Checkout & Farewell": 100.00,
+            "Overall Experience": 100.00,
+            "Post-visit Call": 66.67,
+            "Net Promoter Score": 100.00
+          },
+          "notes": "Phone unfriendly, no recs, no ID check, trash in restroom, manager no table visit. Server Iveth praised.",
+          "manager_notes_by": "Jonathan Michel (DM)"
+        }
+      ],
+      "average": 93.11,
+      "trend": "stable"
+    },
+    "Ponce (Beltline)": {
+      "shops": [
+        {
+          "date": "2026-03-27",
+          "score": 92.92,
+          "pdf": "pdfs/RrealTacosPonce[3-27-2026].pdf"
+        }
+      ],
+      "average": 92.92,
+      "trend": "stable"
+    },
+    "West Midtown": {
+      "shops": [
+        {
+          "date": "2026-03-26",
+          "score": 92.20,
+          "pdf": "pdfs/RrealTacosWestMidtown[3-26-2026].pdf"
+        }
+      ],
+      "average": 92.20,
+      "trend": "stable"
+    },
+    "Buckhead": {
+      "shops": [
+        {
+          "date": "2026-03-21",
+          "score": 91.69,
+          "pdf": "pdfs/RrealTacosBuckhead[3-21-2026].pdf"
+        }
+      ],
+      "average": 91.69,
+      "trend": "stable"
+    },
+    "Decatur": {
+      "shops": [
+        {
+          "date": "2026-03-24",
+          "score": 86.77,
+          "pdf": "pdfs/RrealTacosDecatur[3-24-2026].pdf"
+        }
+      ],
+      "average": 86.77,
+      "trend": "stable"
+    },
+    "Chamblee": {
+      "shops": [
+        {
+          "date": "2026-03-14",
+          "score": 83.13,
+          "pdf": "pdfs/RrealTacosChamblee[3-14-2026].pdf"
+        }
+      ],
+      "average": 83.13,
+      "trend": "stable"
+    },
+    "Cumming": {
+      "shops": [
+        {
+          "date": "2026-03-22",
+          "score": 82.19,
+          "pdf": "pdfs/RrealTacosCumming[3-22-2026].pdf"
+        }
+      ],
+      "average": 82.19,
+      "trend": "stable"
+    }
+  },
+  "not_yet_shopped": ["Midtown", "Duluth", "Lawrenceville", "Woodstock"],
+  "overall_average": 89.68,
+  "total_shops": 8
+}
