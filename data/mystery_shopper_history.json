@@ -1,6 +1,58 @@
 {
   "last_updated": "2026-03-29T22:00:00Z",
   "locations": {
+    "Midtown": {
+      "shops": [
+        {
+          "date": "2026-03-23",
+          "day": "Sunday",
+          "time": "Unknown",
+          "score": 96.92,
+          "pdf": "pdfs/RrealTacosMidtown[3-23-2026].pdf",
+          "categories": {
+            "Arrival & Host Stand": 66.67,
+            "Server/Bartender": 100.00,
+            "Service Flow & Timing": 100.00,
+            "Food & Beverage": 100.00,
+            "Cleanliness": 100.00,
+            "Manager Performance": 100.00,
+            "Checkout & Farewell": 100.00,
+            "Overall Experience": 100.00,
+            "Post-visit Call": 100.00,
+            "Net Promoter Score": 100.00
+          },
+          "notes": "Strong performance. Host stand needs improvement - guest not walked to table, menus/QR codes not mentioned. Restroom trash overflowing."
+        }
+      ],
+      "average": 96.92,
+      "trend": "new"
+    },
+    "Duluth": {
+      "shops": [
+        {
+          "date": "2026-03-26",
+          "day": "Wednesday",
+          "time": "Unknown",
+          "score": 95.31,
+          "pdf": "pdfs/RrealTacosDuluth[3-26-2026].pdf",
+          "categories": {
+            "Arrival & Host Stand": 100.00,
+            "Server/Bartender": 100.00,
+            "Service Flow & Timing": 81.82,
+            "Food & Beverage": 100.00,
+            "Cleanliness": 100.00,
+            "Manager Performance": 75.00,
+            "Checkout & Farewell": 100.00,
+            "Overall Experience": 100.00,
+            "Post-visit Call": 100.00,
+            "Net Promoter Score": 100.00
+          },
+          "notes": "Good overall. Service timing issue: drinks took 7m 53s (target <5m). Manager did not visit table. Pineapple Guava Margarita too sweet."
+        }
+      ],
+      "average": 95.31,
+      "trend": "new"
+    },
     "Sandy Springs": {
       "shops": [
         {
@@ -121,7 +173,7 @@
       "trend": "stable"
     }
   },
-  "not_yet_shopped": ["Midtown", "Duluth", "Lawrenceville", "Woodstock"],
-  "overall_average": 89.68,
-  "total_shops": 8
+  "not_yet_shopped": ["Lawrenceville", "Woodstock"],
+  "overall_average": 91.41,
+  "total_shops": 10
 }
