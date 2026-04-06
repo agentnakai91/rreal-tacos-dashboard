@@ -1,179 +1,192 @@
 {
-  "last_updated": "2026-03-29T22:00:00Z",
-  "locations": {
-    "Midtown": {
-      "shops": [
-        {
-          "date": "2026-03-23",
-          "day": "Sunday",
-          "time": "Unknown",
-          "score": 96.92,
-          "pdf": "pdfs/RrealTacosMidtown[3-23-2026].pdf",
-          "categories": {
-            "Arrival & Host Stand": 66.67,
-            "Server/Bartender": 100.00,
-            "Service Flow & Timing": 100.00,
-            "Food & Beverage": 100.00,
-            "Cleanliness": 100.00,
-            "Manager Performance": 100.00,
-            "Checkout & Farewell": 100.00,
-            "Overall Experience": 100.00,
-            "Post-visit Call": 100.00,
-            "Net Promoter Score": 100.00
-          },
-          "notes": "Strong performance. Host stand needs improvement - guest not walked to table, menus/QR codes not mentioned. Restroom trash overflowing."
+    "last_updated": "2026-04-06T15:10:12Z",
+    "locations": {
+        "Midtown": {
+            "shops": [
+                {
+                    "date": "2026-03-23",
+                    "day": "Sunday",
+                    "time": "Unknown",
+                    "score": 96.92,
+                    "pdf": "pdfs/RrealTacosMidtown[3-23-2026].pdf",
+                    "categories": {
+                        "Arrival & Host Stand": 66.67,
+                        "Server/Bartender": 100.0,
+                        "Service Flow & Timing": 100.0,
+                        "Food & Beverage": 100.0,
+                        "Cleanliness": 100.0,
+                        "Manager Performance": 100.0,
+                        "Checkout & Farewell": 100.0,
+                        "Overall Experience": 100.0,
+                        "Post-visit Call": 100.0,
+                        "Net Promoter Score": 100.0
+                    },
+                    "notes": "Strong performance. Host stand needs improvement - guest not walked to table, menus/QR codes not mentioned. Restroom trash overflowing."
+                }
+            ],
+            "average": 96.92,
+            "trend": "new"
+        },
+        "Duluth": {
+            "shops": [
+                {
+                    "date": "2026-03-26",
+                    "day": "Wednesday",
+                    "time": "Unknown",
+                    "score": 95.31,
+                    "pdf": "pdfs/RrealTacosDuluth[3-26-2026].pdf",
+                    "categories": {
+                        "Arrival & Host Stand": 100.0,
+                        "Server/Bartender": 100.0,
+                        "Service Flow & Timing": 81.82,
+                        "Food & Beverage": 100.0,
+                        "Cleanliness": 100.0,
+                        "Manager Performance": 75.0,
+                        "Checkout & Farewell": 100.0,
+                        "Overall Experience": 100.0,
+                        "Post-visit Call": 100.0,
+                        "Net Promoter Score": 100.0
+                    },
+                    "notes": "Good overall. Service timing issue: drinks took 7m 53s (target <5m). Manager did not visit table. Pineapple Guava Margarita too sweet."
+                }
+            ],
+            "average": 95.31,
+            "trend": "new"
+        },
+        "Sandy Springs": {
+            "shops": [
+                {
+                    "date": "2026-03-22",
+                    "day": "Sunday",
+                    "time": "5:03 PM",
+                    "score": 96.77,
+                    "pdf": "pdfs/RrealTacosSandySprings[3-22-2026].pdf",
+                    "categories": {
+                        "Arrival & Host Stand": 85.71,
+                        "Server/Bartender": 100.0,
+                        "Service Flow & Timing": 90.0,
+                        "Food & Beverage": 100.0,
+                        "Cleanliness": 100.0,
+                        "Manager Performance": 100.0,
+                        "Checkout & Farewell": 100.0,
+                        "Overall Experience": 100.0,
+                        "Post-visit Call": 100.0,
+                        "Net Promoter Score": 100.0
+                    },
+                    "notes": "Way to go Sandy Springs - Miguel"
+                }
+            ],
+            "average": 96.77,
+            "trend": "stable"
+        },
+        "Sugar Hill": {
+            "shops": [
+                {
+                    "date": "2026-03-24",
+                    "day": "Tuesday",
+                    "time": "6:44 PM",
+                    "score": 93.11,
+                    "pdf": null,
+                    "categories": {
+                        "Arrival & Host Stand": 100.0,
+                        "Server/Bartender": 90.91,
+                        "Service Flow & Timing": 100.0,
+                        "Food & Beverage": 100.0,
+                        "Cleanliness": 97.5,
+                        "Manager Performance": 66.67,
+                        "Checkout & Farewell": 100.0,
+                        "Overall Experience": 100.0,
+                        "Post-visit Call": 66.67,
+                        "Net Promoter Score": 100.0
+                    },
+                    "notes": "Phone unfriendly, no recs, no ID check, trash in restroom, manager no table visit. Server Iveth praised.",
+                    "manager_notes_by": "Jonathan Michel (DM)"
+                }
+            ],
+            "average": 93.11,
+            "trend": "stable"
+        },
+        "Ponce (Beltline)": {
+            "shops": [
+                {
+                    "date": "2026-03-27",
+                    "score": 92.92,
+                    "pdf": "pdfs/RrealTacosPonce[3-27-2026].pdf"
+                }
+            ],
+            "average": 92.92,
+            "trend": "stable"
+        },
+        "West Midtown": {
+            "shops": [
+                {
+                    "date": "2026-03-26",
+                    "score": 92.2,
+                    "pdf": "pdfs/RrealTacosWestMidtown[3-26-2026].pdf"
+                }
+            ],
+            "average": 92.2,
+            "trend": "stable"
+        },
+        "Buckhead": {
+            "shops": [
+                {
+                    "date": "2026-03-21",
+                    "score": 91.69,
+                    "pdf": "pdfs/RrealTacosBuckhead[3-21-2026].pdf"
+                }
+            ],
+            "average": 91.69,
+            "trend": "stable"
+        },
+        "Decatur": {
+            "shops": [
+                {
+                    "date": "2026-03-24",
+                    "score": 86.77,
+                    "pdf": "pdfs/RrealTacosDecatur[3-24-2026].pdf"
+                }
+            ],
+            "average": 86.77,
+            "trend": "stable"
+        },
+        "Chamblee": {
+            "shops": [
+                {
+                    "date": "2026-03-14",
+                    "score": 83.13,
+                    "pdf": "pdfs/RrealTacosChamblee[3-14-2026].pdf"
+                }
+            ],
+            "average": 83.13,
+            "trend": "stable"
+        },
+        "Cumming": {
+            "shops": [
+                {
+                    "date": "2026-03-22",
+                    "score": 82.19,
+                    "pdf": "pdfs/RrealTacosCumming[3-22-2026].pdf"
+                }
+            ],
+            "average": 82.19,
+            "trend": "stable"
+        },
+        "Lawrenceville": {
+            "shops": [
+                {
+                    "date": "2026-03-31",
+                    "score": 93.11,
+                    "pdf": "pdfs/RrealTacosLawrenceville[3-2026].pdf"
+                }
+            ],
+            "average": 93.11,
+            "trend": "new"
         }
-      ],
-      "average": 96.92,
-      "trend": "new"
     },
-    "Duluth": {
-      "shops": [
-        {
-          "date": "2026-03-26",
-          "day": "Wednesday",
-          "time": "Unknown",
-          "score": 95.31,
-          "pdf": "pdfs/RrealTacosDuluth[3-26-2026].pdf",
-          "categories": {
-            "Arrival & Host Stand": 100.00,
-            "Server/Bartender": 100.00,
-            "Service Flow & Timing": 81.82,
-            "Food & Beverage": 100.00,
-            "Cleanliness": 100.00,
-            "Manager Performance": 75.00,
-            "Checkout & Farewell": 100.00,
-            "Overall Experience": 100.00,
-            "Post-visit Call": 100.00,
-            "Net Promoter Score": 100.00
-          },
-          "notes": "Good overall. Service timing issue: drinks took 7m 53s (target <5m). Manager did not visit table. Pineapple Guava Margarita too sweet."
-        }
-      ],
-      "average": 95.31,
-      "trend": "new"
-    },
-    "Sandy Springs": {
-      "shops": [
-        {
-          "date": "2026-03-22",
-          "day": "Sunday",
-          "time": "5:03 PM",
-          "score": 96.77,
-          "pdf": "pdfs/RrealTacosSandySprings[3-22-2026].pdf",
-          "categories": {
-            "Arrival & Host Stand": 85.71,
-            "Server/Bartender": 100.00,
-            "Service Flow & Timing": 90.00,
-            "Food & Beverage": 100.00,
-            "Cleanliness": 100.00,
-            "Manager Performance": 100.00,
-            "Checkout & Farewell": 100.00,
-            "Overall Experience": 100.00,
-            "Post-visit Call": 100.00,
-            "Net Promoter Score": 100.00
-          },
-          "notes": "Way to go Sandy Springs - Miguel"
-        }
-      ],
-      "average": 96.77,
-      "trend": "stable"
-    },
-    "Sugar Hill": {
-      "shops": [
-        {
-          "date": "2026-03-24",
-          "day": "Tuesday",
-          "time": "6:44 PM",
-          "score": 93.11,
-          "pdf": null,
-          "categories": {
-            "Arrival & Host Stand": 100.00,
-            "Server/Bartender": 90.91,
-            "Service Flow & Timing": 100.00,
-            "Food & Beverage": 100.00,
-            "Cleanliness": 97.50,
-            "Manager Performance": 66.67,
-            "Checkout & Farewell": 100.00,
-            "Overall Experience": 100.00,
-            "Post-visit Call": 66.67,
-            "Net Promoter Score": 100.00
-          },
-          "notes": "Phone unfriendly, no recs, no ID check, trash in restroom, manager no table visit. Server Iveth praised.",
-          "manager_notes_by": "Jonathan Michel (DM)"
-        }
-      ],
-      "average": 93.11,
-      "trend": "stable"
-    },
-    "Ponce (Beltline)": {
-      "shops": [
-        {
-          "date": "2026-03-27",
-          "score": 92.92,
-          "pdf": "pdfs/RrealTacosPonce[3-27-2026].pdf"
-        }
-      ],
-      "average": 92.92,
-      "trend": "stable"
-    },
-    "West Midtown": {
-      "shops": [
-        {
-          "date": "2026-03-26",
-          "score": 92.20,
-          "pdf": "pdfs/RrealTacosWestMidtown[3-26-2026].pdf"
-        }
-      ],
-      "average": 92.20,
-      "trend": "stable"
-    },
-    "Buckhead": {
-      "shops": [
-        {
-          "date": "2026-03-21",
-          "score": 91.69,
-          "pdf": "pdfs/RrealTacosBuckhead[3-21-2026].pdf"
-        }
-      ],
-      "average": 91.69,
-      "trend": "stable"
-    },
-    "Decatur": {
-      "shops": [
-        {
-          "date": "2026-03-24",
-          "score": 86.77,
-          "pdf": "pdfs/RrealTacosDecatur[3-24-2026].pdf"
-        }
-      ],
-      "average": 86.77,
-      "trend": "stable"
-    },
-    "Chamblee": {
-      "shops": [
-        {
-          "date": "2026-03-14",
-          "score": 83.13,
-          "pdf": "pdfs/RrealTacosChamblee[3-14-2026].pdf"
-        }
-      ],
-      "average": 83.13,
-      "trend": "stable"
-    },
-    "Cumming": {
-      "shops": [
-        {
-          "date": "2026-03-22",
-          "score": 82.19,
-          "pdf": "pdfs/RrealTacosCumming[3-22-2026].pdf"
-        }
-      ],
-      "average": 82.19,
-      "trend": "stable"
-    }
-  },
-  "not_yet_shopped": ["Lawrenceville", "Woodstock"],
-  "overall_average": 91.41,
-  "total_shops": 10
+    "not_yet_shopped": [
+        "Woodstock"
+    ],
+    "overall_average": 91.28,
+    "total_shops": 11
 }
